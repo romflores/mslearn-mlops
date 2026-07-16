@@ -16,6 +16,8 @@ jobs:
       contains(github.event.comment.body, '/deploy-prod')
     runs-on: ubuntu-latest
     environment: prod
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
     steps:
       - name: Check out repository

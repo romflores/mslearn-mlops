@@ -18,9 +18,8 @@ jobs:
     environment: prod
     env:
       ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-      
+
     steps:
-      # - uses: actions/checkout@v4
       - name: Check out repository
         uses: actions/checkout@v4
         with:
